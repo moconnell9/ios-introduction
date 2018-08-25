@@ -4,6 +4,7 @@ Everything you need to get started coding an iOS application in Swift.
 # FAQ
 
 - Should I go [native or hybrid?](https://hackernoon.com/react-native-vs-real-native-apps-which-is-better-a8383d6f7ca5)
+    - https://stackshare.io/stackups/java-vs-swift-vs-python
 - Do I need to purchase an Apple developer account?
     - A Developer account lets you run your app on a real device and publish to the app store. You can still develop in Xcode and use the simulator for free.
 - How popular is Swift?
