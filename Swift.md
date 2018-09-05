@@ -7,7 +7,7 @@ A **'var'** variable is mutable.
 
 **Declare** any variable with either let or var, followed by the type:
 
-```var toolbox: [String]```
+```var toolbox: [String] //array of strings```
 
 Similar to javascript, variables in Swift use type inference. We do not need to specify the type when **assigning** to a variable in order for the compiler to figure it out.
 
@@ -27,21 +27,26 @@ Optionals help guide you on the path to gracefully handling edge cases and error
 
 ### 'If let' vs. 'guard let'
 
-'Guard let' is preferred because it reduces the level of nestedness in code, compared to 'if let'.
+
+'Guard let' is preferred because it reduces the level of nestedness in code, compared to 'if let'. There are use cases for both.
 
 ```
-guard let tool = toolbox?[0] else { return }
-print("I have a %@ in my toolbox", tool)
-```
-```
-if let tool = toolbox?[0] {
-    print("I have a %@ in my toolbox", tool)
+//let's use a dictionary this time
+var toolbox = ["hammer" : "Stanley 5oz. Pro", "screwdriver" : "Craftsman 9-31794 Slotted Phillips"]
+        
+//PREFERRED: 'guard let'
+guard let hammer = toolbox?["hammer"] else { return }
+print("I have a %@ hammer in my toolbox", hammer)
+
+//'if let'
+if let hammer = toolbox?["hammer"] {
+    print("I have a %@ hammer in my toolbox", hammer)
 }
 ```
 
-Both statements can also be nested:
+Many types of statements can be combined in Swift:
 ```
-if let hammer = toolbox?[0], wrench = toolbox?[1] {
-    print("I have a %@ and a %@ in my toolbox", hammer, wrench)
+if let hammer = toolbox?["hammer"], wrench = toolbox?["wrench"] {
+    print("I have a hammer AND a wrench in my toolbox!")
 }
 ```
