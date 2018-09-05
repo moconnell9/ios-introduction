@@ -9,6 +9,7 @@
     + [Utilities View](#utilities-view)
     + [Editor View](#editor-view)
   * [Build Settings](#build-settings)
+  * [Add Files to Project](#add-files-to-project)
   * [Sources](#sources)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -126,6 +127,12 @@ Many a stackoverflow page will suggest tweaking your Build Settings, but it can 
 *NOTE:* There are separate build settings for the Project and its Targets- usually you want the target. Be sure to check out both!
 
 ![Build Settings](http://radex.io/assets/2016/xcode7-xcode8/BuildSettings.png)
+
+## Add Files to Project
+
+When adding new files by choosing a template, it will automatically get added to the target's Copy Bundle Resources.
+When adding existing files or images from Finder, be sure to check "create groups" and add to the main target.
+![Add files](http://s12572.pcdn.co/wp-content/uploads/2015/12/AddingFolder.jpg)
 
 
 #### Sources
