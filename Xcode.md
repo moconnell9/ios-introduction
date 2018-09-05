@@ -1,19 +1,19 @@
 # Xcode
 
-  * [The Lingo](#the-lingo)
-  * [Lifesaving Shortcuts](#lifesaving-shortcuts)
+  * [Project Lingo](#project-lingo)
+  * [Keyboard Shortcuts](#keyboard-shortcuts)
   * [Anatomy of the Xcode Editor](#anatomy-of-the-xcode-editor)
-    + [The Toolbar](#the-toolbar)
-    + [The Navigator](#the-navigator)
-    + [The Debugger](#the-debugger)
-    + [The Utilities View](#the-utilities-view)
+    + [Toolbar](#toolbar)
+    + [Navigator](#navigator)
+    + [Debugger](#debugger)
+    + [Utilities View](#utilities-view)
     + [Editor View](#editor-view)
   * [Build Settings](#build-settings)
   * [Sources](#sources)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-## The Lingo
+## Project Lingo
 
 - **Workspace**
 	- contains one or more projects.
@@ -29,7 +29,7 @@
 	- in a scheme, you can define what happens for each build action, e.g. Build, Run, Test. Often the same target will be used for multiple schemes.
 	- having [multiple, iterative environments](https://en.wikipedia.org/wiki/Development,_testing,_acceptance_and_production) with their own endpoints is one common use for a scheme.
 	
-## Lifesaving Shortcuts
+## Keyboard Shortcuts
 Xcode, while wonderful, does not have the most intuitive controls for some of its most important functions. Learning these hotkeys will save you a lot of time, and probably a few tears.
 
 - Open a new tab: 		```cmd + T```
@@ -51,7 +51,7 @@ Xcode, while wonderful, does not have the most intuitive controls for some of it
 
 ![Xcode editor diagram](https://codewithchris-wpengine.netdna-ssl.com/img/xcodetutorial/xcode_7_workspace_diagram.jpg)
 
-### The Toolbar
+### Toolbar
 Left to right:
 - ***Play*** (build and run, ```cmd + R```)
 - Stop current process
@@ -62,7 +62,7 @@ Left to right:
 	- the assistant editor is awkward and annoying
 - Navigator/Debug/Utilities area toggle
 
-### The Navigator
+### Navigator
 
 Oh boy. Here goes:
 - **Project navigator** (folder tree view)
@@ -85,7 +85,7 @@ Oh boy. Here goes:
 - Report navigator
 	- View code coverage, logs
 
-### The Debugger
+### Debugger
 
 Note the Variable view/console view toggle in the bottom right
 - **Disable/enable all breakpoints**
@@ -94,7 +94,7 @@ Note the Variable view/console view toggle in the bottom right
 - Step in
 - Step out (e.g. when stuck in assembly code)
 
-### The Utilities View
+### Utilities View
 
 - File details
 - Central part of using the storyboard
@@ -116,6 +116,7 @@ Note the Variable view/console view toggle in the bottom right
 	- Break only on condition
 	- trigger console actions, e.g. ```print```
 	> ![smart breakpoints](https://cdn-images-1.medium.com/max/1476/1*CDd-8ynYOglKaYojibhfiQ.png)
+	
 ## Build Settings
 
 Many a stackoverflow page will suggest tweaking your Build Settings, but it can be hard to remember how to get to those settings. Here's how:
