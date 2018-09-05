@@ -12,8 +12,6 @@
   * [Add Files to Project](#add-files-to-project)
   * [Sources](#sources)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 ## Project Lingo
 
 - **Workspace**
