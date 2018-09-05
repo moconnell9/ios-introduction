@@ -23,6 +23,8 @@ Of course, if we want to specify the type, we can:
 
 ```var toolbox: [String]?```
 
+? denotes an optional variable. ! denotes a force unwrapping of an optional.
+
 Optionals help guide you on the path to gracefully handling edge cases and error conditions. If you try to access an optional variable without any checks, the compiler will yell at you. 
 
 ### 'If let' vs. 'guard let'
@@ -50,3 +52,35 @@ if let hammer = toolbox?["hammer"], wrench = toolbox?["wrench"] {
     print("I have a hammer AND a wrench in my toolbox!")
 }
 ```
+
+### Force-unwrapping
+
+```let hammer = toolbox!["hammer"]```
+
+Hey, that is much shorter, and the compiler still shut up! Cool, right?
+
+***WRONG.*** ** Force unwrapping is considered bad practice.** Swiftlint will fail your build if you use it anywhere other than UIOutlets.
+
+In this example, if the key "hammer" is not in the dictionary, the entire app crashes. This is very bad.
+
+When you force-unwrap, you are making a guarantee to the compiler that you know better than it does, and that you are 100% sure the value will be there. If you are wrong, your app crashes. That's it.
+
+## Try, Try?, Try!
+
+You should never be satisfied leaving your app open to the possibility of crashing. As a developer, you should handle the edge cases, errors and exceptions and decide ahead of time what to do next.
+
+
+## Constants
+
+Similar to our earlier conversation about force unwrapping, constants are another way to ensure that your code is as strongly typed (and least susceptible to crashing) as possible. by defining string literal constants in one place and using variable references everywhere else, we minimize code duplication and the risk of creating a typo that is very difficult to find.
+```
+struct Constants
+    let userAppGroup = "B672DS45"
+    
+    struct databaseConstants {
+        let toolTable = "tool__c"
+        let nameField = "name__c"
+        let typeField = "type__c"
+    }
+}
+````
