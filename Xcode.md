@@ -136,6 +136,6 @@ When adding existing files or images from Finder, be sure to check "create group
 
 
 #### Sources
-https://developer.gnome.org/anjuta-manual/stable/autotools-build-build.html.en
-https://codewithchris.com/xcode-tutorial/
+- https://developer.gnome.org/anjuta-manual/stable/autotools-build-build.html.en
+- https://codewithchris.com/xcode-tutorial/
 
