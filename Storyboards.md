@@ -10,3 +10,5 @@
 - Connections Inspector
 
 Adding a UIButton
+
+[Understanding the difference between common view design patterns](https://www.linkedin.com/pulse/understanding-difference-between-mvc-mvp-mvvm-design-rishabh-software/)
