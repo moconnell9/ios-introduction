@@ -61,13 +61,13 @@ Oh boy. Here goes:
 	- containing/matching/starting/ending
 	- matching/ignoring case
 	- search scope
-- Issue navigator
+- **Issue navigator**
 	> ![Stop filter](https://i.stack.imgur.com/IT11h.png)
 	- *NOTE:* Use the STOP toggle in the bottom filter to show errors only- very useful for sifting through many warnings! 
-- Test navigator
+- **Test navigator**
 	- Filter failed tests, much like the issue navigator
 - Debug navigator (never used this either, but useful with threads)
-- Breakpoint navigator
+- **Breakpoint navigator**
 	- Filter enabled breakpoints
 - Report navigator
 	- View code coverage, logs
@@ -75,9 +75,9 @@ Oh boy. Here goes:
 ## The Debugger
 
 Note the Variable view/console view toggle in the bottom right
-- Disable/enable all breakpoints
-- Play (continue)
-- Step over
+- **Disable/enable all breakpoints**
+- **Play (continue)**
+- **Step over**
 - Step in
 - Step out (e.g. when stuck in assembly code)
 
@@ -86,6 +86,23 @@ Note the Variable view/console view toggle in the bottom right
 - File details
 - Central part of using the storyboard
 
+## Editor View
+
+- Related items
+	- recent files, super/subclasses, callers/callees, etc.
+- **Forward/back navigation**
+- forward/back issue navigation
+- **Right-click** on a function/method
+	- **Refactor (rename)**
+	- **Find call hierarchy**
+	- **Jump to definition**
+	- Reveal in project navigator
+	- Show in Finder
+- Quick documentation: ```option + click``` on a function/method
+- Smart breakpoints
+	- Break only on condition
+	- trigger console actions, e.g. ```print```
+	> ![smart breakpoints](https://cdn-images-1.medium.com/max/1476/1*CDd-8ynYOglKaYojibhfiQ.png)
 ## Build Settings
 
 Many a stackoverflow page will suggest tweaking your Build Settings, but it can be hard to remember how to get to those settings. Here's how:
