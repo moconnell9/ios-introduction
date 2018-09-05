@@ -1,5 +1,18 @@
 # Xcode
 
+  * [The Lingo](#the-lingo)
+  * [Lifesaving Shortcuts](#lifesaving-shortcuts)
+  * [Anatomy of the Xcode Editor](#anatomy-of-the-xcode-editor)
+    + [The Toolbar](#the-toolbar)
+    + [The Navigator](#the-navigator)
+    + [The Debugger](#the-debugger)
+    + [The Utilities View](#the-utilities-view)
+    + [Editor View](#editor-view)
+  * [Build Settings](#build-settings)
+  * [Sources](#sources)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## The Lingo
 
 - **Workspace**
@@ -72,7 +85,7 @@ Oh boy. Here goes:
 - Report navigator
 	- View code coverage, logs
 
-## The Debugger
+### The Debugger
 
 Note the Variable view/console view toggle in the bottom right
 - **Disable/enable all breakpoints**
@@ -81,12 +94,12 @@ Note the Variable view/console view toggle in the bottom right
 - Step in
 - Step out (e.g. when stuck in assembly code)
 
-## The Utilities View
+### The Utilities View
 
 - File details
 - Central part of using the storyboard
 
-## Editor View
+### Editor View
 
 - Related items
 	- recent files, super/subclasses, callers/callees, etc.
@@ -117,3 +130,4 @@ Many a stackoverflow page will suggest tweaking your Build Settings, but it can 
 #### Sources
 https://developer.gnome.org/anjuta-manual/stable/autotools-build-build.html.en
 https://codewithchris.com/xcode-tutorial/
+
