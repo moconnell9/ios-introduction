@@ -38,7 +38,7 @@ Xcode, while wonderful, does not have the most intuitive controls for some of it
 
 ![Xcode editor diagram](https://codewithchris-wpengine.netdna-ssl.com/img/xcodetutorial/xcode_7_workspace_diagram.jpg)
 
-### The toolbar
+### The Toolbar
 Left to right:
 - ***Play*** (build and run, ```cmd + R```)
 - Stop current process
@@ -51,7 +51,7 @@ Left to right:
 
 ### The Navigator
 
-Oh boy.
+Oh boy. Here goes:
 - **Project navigator** (folder tree view)
 - Source Control Navigator
 - Symbol navigator (I have never used this)
@@ -62,8 +62,8 @@ Oh boy.
 	- matching/ignoring case
 	- search scope
 - Issue navigator
-	![Stop filter](https://i.stack.imgur.com/IT11h.png)
-	*NOTE:* Use the STOP toggle in the bottom filter to show errors only- very useful for sifting through many warnings! 
+	> ![Stop filter](https://i.stack.imgur.com/IT11h.png)
+	- *NOTE:* Use the STOP toggle in the bottom filter to show errors only- very useful for sifting through many warnings! 
 - Test navigator
 	- Filter failed tests, much like the issue navigator
 - Debug navigator (never used this either, but useful with threads)
@@ -71,6 +71,20 @@ Oh boy.
 	- Filter enabled breakpoints
 - Report navigator
 	- View code coverage, logs
+
+## The Debugger
+
+Note the Variable view/console view toggle in the bottom right
+- Disable/enable all breakpoints
+- Play (continue)
+- Step over
+- Step in
+- Step out (e.g. when stuck in assembly code)
+
+## The Utilities View
+
+- File details
+- Central part of using the storyboard
 
 ## Build Settings
 
