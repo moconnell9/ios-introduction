@@ -12,7 +12,7 @@ This collection is organized into three tiers of information, based on how much 
 ### Recommended Skills
 - Working knowledge of the Storyboard editor and its delegates
 - Know how to install and use frameworks through Cocoapods
-- [File manipulation](./JSONHandler.playground)
+- [File manipulation](./JSONHandling.playground)
 
 ### Advanced Skills
 - Design patterns, e.g. protocols
