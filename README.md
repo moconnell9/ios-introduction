@@ -1,9 +1,26 @@
 # ios-introduction
 Everything you need to get started coding an iOS application in Swift.
 
-# FAQ
+## Targeted Skills
 
-- [30 Example Projects to get you started](https://github.com/soapyigu/Swift-30-Projects)
+This collection is organized into three tiers of information, based on how much time you may have.
+
+### Essential Skills
+- Efficient use of the Xcode editor
+- Working knowledge of the Swift language
+
+### Recommended Skills
+- Working knowledge of the Storyboard editor and its delegates
+- Know how to install and use frameworks through Cocoapods
+- File manipulation
+
+### Advanced Skills
+- Design patterns, e.g. protocols
+- Other delegates, e.g. the keyboard
+
+## FAQ
+
+- [30 Example Projects to help you get started](https://github.com/soapyigu/Swift-30-Projects)
 - How does [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language)#Comparisons_to_other_languages) compare to other languages?
     - Swift highlights:
    	- It has a clean and modern syntax
@@ -15,8 +32,7 @@ Everything you need to get started coding an iOS application in Swift.
     - You do not need a developer account to develop in Xcode and use the device simulator.
     - A Developer account lets you run your app on a real device and publish to the app store.
 - How popular is Swift?
-    - Well, it is #11 on the [TIOBE index](https://www.tiobe.com/tiobe-index/)
-    
+    - Well, it is fairly high on the [TIOBE index](https://www.tiobe.com/tiobe-index/)
 - How is the documentation?
     - Swift documentation: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
     - Apple frameworks: https://developer.apple.com/documentation/
@@ -25,6 +41,3 @@ Everything you need to get started coding an iOS application in Swift.
     - Swiftlint [helps enforce best practices](https://theswiftpost.co/using-swiftlint-and-danger-for-swift-best-practices/)
 - [How object oriented is Swift?](https://skookum.com/blog/swift-blurs-the-lines-of-programming-paradigms)
 	- you can subclass classes, and you can override functions in subclasses, but enums and structs are not really OO
-- What is a workspace?
-    - Xcode 3 introduced the subproject, which is a parent-child relationship, e.g. the parent can reference its child target, but not vice versa
-    - Xcode 4 introduced the workspace, which is a sibling relationship, meaning that any project can reference projects in the same workspace
