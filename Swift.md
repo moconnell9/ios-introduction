@@ -2,6 +2,8 @@
 
 Please see JSONHandling.playground for a working demonstration that includes the below concepts.
 
+[Apple's documentation for Swift](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html) is very good- be sure to check it out! The below are just some highlights.
+
 ## Let vs. Var
 
 A **'let'** variable is a constant, and cannot be changed.
