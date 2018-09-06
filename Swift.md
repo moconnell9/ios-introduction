@@ -23,7 +23,8 @@ Of course, if we want to specify the type, we can:
 
 ```var toolbox: [String]?```
 
-? denotes an optional variable. ! denotes a force unwrapping of an optional.
+> ? denotes an optional variable. 
+> ! denotes a force unwrapping of an optional.
 
 Optionals help guide you on the path to gracefully handling edge cases and error conditions. If you try to access an optional variable without any checks, the compiler will yell at you. 
 
@@ -52,6 +53,7 @@ if let hammer = toolbox?["hammer"], wrench = toolbox?["wrench"] {
     print("I have a hammer AND a wrench in my toolbox!")
 }
 ```
+In this example, we can clearly see the keys are in the dictionary. But when a dictionary is populated at runtime, e.g. from a database or JSON file, we cannot be 100% certain the expected keys were found.
 
 ### Force-unwrapping
 
@@ -59,7 +61,7 @@ if let hammer = toolbox?["hammer"], wrench = toolbox?["wrench"] {
 
 Hey, that is much shorter, and the compiler still shut up! Cool, right?
 
-***WRONG.*** ** Force unwrapping is considered bad practice.** Swiftlint will fail your build if you use it anywhere other than UIOutlets.
+***WRONG.*** **Force unwrapping is considered bad practice.** Swiftlint will fail your build if you use it anywhere other than UIOutlets or try-catch statements.
 
 In this example, if the key "hammer" is not in the dictionary, the entire app crashes. This is very bad.
 
@@ -67,20 +69,70 @@ When you force-unwrap, you are making a guarantee to the compiler that you know 
 
 ## Try, Try?, Try!
 
-You should never be satisfied leaving your app open to the possibility of crashing. As a developer, you should handle the edge cases, errors and exceptions and decide ahead of time what to do next.
+Of course you don't want to leave your app open to the possibility of crashing. As a developer, you handle the edge cases, errors and exceptions and decide ahead of time what to do next.
 
+[This article](https://medium.com/@JoyceMatos/error-handling-in-swift-3-try-try-and-try-f19705e32ff4) does a great job of explaining how to use try/catch statements in Swift, and the differences between optional try and forced try.
 
 ## Constants
 
-Similar to our earlier conversation about force unwrapping, constants are another way to ensure that your code is as strongly typed (and least susceptible to crashing) as possible. by defining string literal constants in one place and using variable references everywhere else, we minimize code duplication and the risk of creating a typo that is very difficult to find.
+In line with our earlier conversation about force unwrapping, constants are another way to ensure that your code is as strongly typed (and least susceptible to crashing) as possible. By defining string literal constants in one place and using variable references everywhere else, we minimize code duplication and the risk of creating a typo that is very difficult to find.
+
+Enums and structs are commonly used for this purpose in Swift.
 ```
+//Constants.swift
+
 struct Constants
     let userAppGroup = "B672DS45"
+    let pathToJSON = "path/to/file"
     
     struct databaseConstants {
-        let toolTable = "tool__c"
+        let toolTable = "tool__c" //e.g. these fieldnames are how Salesforce custom fields are structured
         let nameField = "name__c"
         let typeField = "type__c"
+        
+        struct databaseKeys {
+            let hammer = "hammer__c"
+            let wrench = "wrench__c"
+        }
     }
 }
+
+//sample.json
+{
+    "tools": {
+        "hammer": "Stanley 5oz. Pro",
+        "screwdriver": "Craftsman 9-31794 Slotted Phillips"
+    },
+    ...
+}
+
+
+//JSONHandler.swift
+
+typealias Keys = Constants.databaseConstants.databaseKeys
+var json: Any?
+
+public init(pathAsString: String) { //pass in the filepath of the JSON
+    var tempData: Data = Data()
+    do {
+        tempData = try Data(contentsOf: URL(fileURLWithPath: pathAsString))
+    }
+    catch {
+        print(error.localizedDescription)
+    }
+    self.data = tempData
+    self.json = try? JSONSerialization.jsonObject(with: self.data)
+}
+
+public func getTools() {
+    if let dictionary = json as? [String: Any] {
+        if let hammer = toolbox?[Keys.hammer], wrench = toolbox?[Keys.wrench] {
+            print("I have a hammer AND a wrench in my toolbox!")
+        }
+    }
+}
+
+//Main.swift
+let jsonHandler = JSONHandler(pathAsString: Constants.pathToJSON)
+jsonHandler.getTools()
 ````
