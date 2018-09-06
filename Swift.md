@@ -79,55 +79,69 @@ In line with our earlier conversation about force unwrapping, constants are anot
 
 Enums and structs are commonly used for this purpose in Swift.
 ```
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
 //Constants.swift
 
-struct Constants
-    let userAppGroup = "B672DS45"
-    let pathToJSON = "path/to/file"
+struct Constants {
+    static let userAppGroup = "B672DS45"
+    static let pathToJSON = "path/to/file"
     
     struct databaseConstants {
-        let toolTable = "tool__c" //e.g. these fieldnames are how Salesforce custom fields are structured
-        let nameField = "name__c"
-        let typeField = "type__c"
+        static let toolTable = "tool__c" //e.g. these fieldnames are how Salesforce custom fields are structured
+        static let nameField = "name__c"
+        static let typeField = "type__c"
         
         struct databaseKeys {
-            let hammer = "hammer__c"
-            let wrench = "wrench__c"
+            static let hammer = "hammer__c"
+            static let wrench = "wrench__c"
+            static let screwdriver = "screwdriver__c"
         }
     }
 }
 
 //sample.json
+let jsonString: String =
+"""
 {
     "tools": {
-        "hammer": "Stanley 5oz. Pro",
-        "screwdriver": "Craftsman 9-31794 Slotted Phillips"
+        "hammer__c": "Stanley 5oz. Pro",
+        "screwdriver__c": "Craftsman 9-31794 Slotted Phillips"
     },
     ...
 }
+"""
 
 
 //JSONHandler.swift
 
 typealias Keys = Constants.databaseConstants.databaseKeys
-var json: Any?
 
-public init(pathAsString: String) { //pass in the filepath of the JSON
-    var tempData: Data = Data()
-    do {
-        tempData = try Data(contentsOf: URL(fileURLWithPath: pathAsString))
+class JSONHandler {
+    var json: Any?
+    var data: Data
+    
+    public init(pathAsString: String) { //pass in the filepath of the JSON
+        var tempData: Data = Data()
+        do {
+            //tempData = try Data(contentsOf: URL(fileURLWithPath: pathAsString))
+            tempData = jsonString.data(using: .utf8)!
+        }
+        catch {
+            print(error.localizedDescription)
+        }
+        self.data = tempData
+        self.json = try? JSONSerialization.jsonObject(with: self.data)
     }
-    catch {
-        print(error.localizedDescription)
-    }
-    self.data = tempData
-    self.json = try? JSONSerialization.jsonObject(with: self.data)
-}
 
-public func getTools() {
-    if let dictionary = json as? [String: Any] {
-        if let hammer = toolbox?[Keys.hammer], wrench = toolbox?[Keys.wrench] {
-            print("I have a hammer AND a wrench in my toolbox!")
+    public func getTools() {
+        if let toolbox = json as? [String: Any] {
+            if let hammer = toolbox[Keys.hammer], let wrench = toolbox[Keys.screwdriver] {
+                print("I have a hammer AND a wrench in my toolbox!")
+            }
         }
     }
 }
@@ -135,4 +149,5 @@ public func getTools() {
 //Main.swift
 let jsonHandler = JSONHandler(pathAsString: Constants.pathToJSON)
 jsonHandler.getTools()
+
 ````
