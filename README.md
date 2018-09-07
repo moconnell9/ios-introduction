@@ -1,6 +1,15 @@
 # ios-introduction
 Everything you need to get started coding an iOS application in Swift.
 
+- [ios-introduction](#ios-introduction)
+  * [Targeted Skills](#targeted-skills)
+    + [Essential Skills](#essential-skills)
+    + [Recommended Skills](#recommended-skills)
+    + [[Additional Skills](./Additional.md)](#-additional-skills---additionalmd-)
+  * [FAQ](#faq)
+    + [Nerdy articles](#nerdy-articles)
+    + [Really useful links](#really-useful-links)
+
 ## Targeted Skills
 
 This collection is organized into three tiers of information, based on how much time you may have.
