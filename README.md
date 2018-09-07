@@ -25,7 +25,9 @@ This collection is organized into three tiers of information, based on how much 
 
 ### [Additional](./Additional.md)
 - Design patterns, e.g. delegates, protocols
-- Style Guide, Swiftlint
+- Style Guide + Swiftlint
+- Unit Testing with XCTest
+- Bridging with Objective-C code
 
 ## FAQ
 
