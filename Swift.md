@@ -4,6 +4,16 @@ Please see [JSONHandling.playground](JSONHandling.playground) for a quick-to-wor
 
 [Apple's documentation for Swift](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html) is very good- be sure to check it out! The below are just some highlights.
 
+- [Swift](#swift)
+  * [Let vs. Var](#let-vs-var)
+  * [Optional variables](#optional-variables)
+    + ['If let' vs. 'guard let'](#-if-let--vs--guard-let-)
+    + [Force-unwrapping](#force-unwrapping)
+  * [Try, Try?, Try!](#try--try---try-)
+  * [Constants](#constants)
+  * [Class functions vs. Instance functions](#class-functions-vs-instance-functions)
+  * [Inout functions (pointer equivalent)](#inout-functions--pointer-equivalent-)
+
 ## Let vs. Var
 
 A **'let'** variable is a constant, and cannot be changed.
