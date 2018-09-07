@@ -50,7 +50,7 @@ This collection is organized into three tiers of information, based on how much 
 
 ### Really useful links
 - Can I please just download an example project and start there?
-	- In addition to the Storyboard tutorial and file manipulation example above, here is a nice variety of [30 Example Projects](https://github.com/soapyigu/Swift-30-Projects)
+	- In addition to the Storyboard tutorial and file decoding example above, here is a nice variety of [30 Example Projects](https://github.com/soapyigu/Swift-30-Projects)
 - How is the documentation?
     - Pretty darn thorough:
         - Swift documentation: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
