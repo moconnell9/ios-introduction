@@ -39,6 +39,7 @@ This collection is organized into three tiers of information, based on how much 
 	- is memory safe by default
 - How popular is Swift?
     - It is fairly high on the [TIOBE index](https://www.tiobe.com/tiobe-index/), updated monthly.
+    - [Java vs. Swift vs. Python](https://stackshare.io/stackups/java-vs-swift-vs-python)
 - [How object oriented is Swift?](https://skookum.com/blog/swift-blurs-the-lines-of-programming-paradigms)
 	- you can subclass classes, and you can override functions in subclasses, but enums and structs are not really OO
 - Do I need to purchase an Apple developer account?
