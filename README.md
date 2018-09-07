@@ -14,7 +14,7 @@ This collection is organized into three tiers of information, based on how much 
 - [Install and use frameworks through Cocoapods](./Cocoapods.md)
 - [File manipulation](./JSONHandling.playground)
 
-### [Advanced Skills](./Advanced.md)
+### [Additional Skills](./Additional.md)
 - Design patterns, e.g. delegates, protocols
 - Style Guide, Swiftlint
 
