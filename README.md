@@ -31,7 +31,6 @@ This collection is organized into three tiers of information, based on how much 
 
 ### Nerdy articles
 - Should I go [native or hybrid?](https://hackernoon.com/react-native-vs-real-native-apps-which-is-better-a8383d6f7ca5)
-    - https://stackshare.io/stackups/java-vs-swift-vs-python
 - How does [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language)#Comparisons_to_other_languages) compare to other languages?
     - Swift highlights:
    	- It has a clean and modern syntax
@@ -54,7 +53,7 @@ This collection is organized into three tiers of information, based on how much 
 	- In addition to the Storyboard tutorial and file decoding example above, here is a nice variety of [30 Example Projects](https://github.com/soapyigu/Swift-30-Projects)
 - How is the documentation?
     - Pretty darn thorough:
-        - Swift documentation: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
-        - Apple frameworks: https://developer.apple.com/documentation/
+        - [Swift documentation](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+        - [Apple frameworks](https://developer.apple.com/documentation/)
 
 
