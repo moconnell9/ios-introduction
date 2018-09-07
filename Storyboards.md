@@ -19,5 +19,5 @@
 
 ## Tutorial
 
-[An excellent tutorial](https://www.raywenderlich.com/464-storyboards-tutorial-for-ios-part-1)
-[Download the tutorial project](https://koenig-media.raywenderlich.com/uploads/2017/06/Ratings-1.zip) (but at least try Part 1 on your own first!)
+> [An excellent tutorial](https://www.raywenderlich.com/464-storyboards-tutorial-for-ios-part-1) <br/>
+> [Download the tutorial project](https://koenig-media.raywenderlich.com/uploads/2017/06/Ratings-1.zip) (but at least try Part 1 on your own first!)
