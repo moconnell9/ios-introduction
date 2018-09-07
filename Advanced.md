@@ -39,3 +39,44 @@ Protocols are basically interfaces that can have sibling relationships, not just
 ## Style Guide
 At the risk of being totally overwhelming, if you are interested in the nitty gritty details about best practices in Swift check out Ray's [Swift Style Guide](https://github.com/raywenderlich/swift-style-guide)
 > "Our overarching goals are clarity, consistency and brevity, in that order."
+
+### Swiftlint
+
+Swiftlint is a sophisticated linter that helps enforce best practices even beyond basic formatting, such as keeping functions and files relatively short in scope and using ```isEmpty``` over ```== 0``` when available.
+
+1. Add Swiftlint to your Podfile. (see the page on cocoapods)
+2. Add a yml file to the same directory as your xcodeproj file.
+3. Add a script to your target Build Phases -> Run Script (see the page on Xcode, build settings)
+```
+//.swiftlint.yml
+
+disabled_rules:
+- trailing_whitespace
+- mark
+- cyclomatic_complexity
+
+opt_in_rules:
+- empty_count
+- empty_string
+- switch_case_on_newline
+
+statement_position:
+  statement_mode: uncuddled_else
+
+line_length:
+  warning: 160
+  error: 200
+
+excluded:
+- Carthage
+```
+
+```
+//under Build Phases -> Run Script -> Shell: /bin/sh
+
+if which swiftlint >/dev/null; then
+swiftlint lint --config .swiftlint.yml //--autocorrect
+else
+echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+fi
+```
