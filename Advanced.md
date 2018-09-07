@@ -42,7 +42,7 @@ At the risk of being totally overwhelming, if you are interested in the nitty gr
 
 ### Swiftlint
 
-[Swiftlint](Build Phases -> Run Script) is a sophisticated linter that helps enforce best practices even beyond basic formatting, such as keeping functions and files relatively short in scope and using ```isEmpty``` over ```== 0``` when available.
+[Swiftlint](https://github.com/realm/SwiftLint) is a sophisticated linter that helps enforce best practices even beyond basic formatting, such as keeping functions and files relatively short in scope and using ```isEmpty``` over ```== 0``` when available.
 
 1. Add Swiftlint to your Podfile. (see the page on cocoapods)
 2. Add a yml file to the same directory as your xcodeproj file.
