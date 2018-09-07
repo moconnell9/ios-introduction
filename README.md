@@ -6,8 +6,8 @@ Everything you need to get started coding an iOS application in Swift.
 This collection is organized into three tiers of information, based on how much time you may have.
 
 ### Essential Skills
-- [Efficient use of the Xcode editor](./Xcode.md)
-- [Working knowledge of the Swift language](./Swift.md)
+- [Getting comfortable with the Xcode editor](./Xcode.md)
+- [Learning the Swift language](./Swift.md)
 
 ### Recommended Skills
 - Working knowledge of the Storyboard editor and its delegates
