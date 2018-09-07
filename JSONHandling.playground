@@ -62,8 +62,11 @@ class JSONHandler {
     public func getTools() {
         if let toolbox = json as? [String: Any] {
             if let tools = toolbox[Tables.tools] as? [String: Any] {
-                if let hammer = tools[Keys.hammer] as? String, let screwdriver = tools[Keys.screwdriver] as? String {
+                if let hammer = tools[Keys.hammer], let screwdriver = tools[Keys.screwdriver] {
                     print("I have a hammer AND a wrench in my toolbox!")
+                }
+                //if we want to actually use the value, we need to tell the compiler what type we are expecting:
+                if let hammer = tools[Keys.hammer] as? String {
                     self.hammer = hammer
                 }
             }
