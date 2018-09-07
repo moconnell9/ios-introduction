@@ -85,3 +85,7 @@ fi
 
 [XCTest Tutorial](https://www.raywenderlich.com/709-ios-unit-testing-and-ui-testing-tutorial) <br/>
 [XCTest Documentation](https://developer.apple.com/documentation/xctest)
+
+## Referencing Objective-C code in Swift
+
+[This tutorial](https://medium.com/ios-os-x-development/swift-and-objective-c-interoperability-2add8e6d6887) is really great, and covers all of the subtle pain points.
