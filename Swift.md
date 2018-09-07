@@ -129,9 +129,9 @@ let result = instance.myFunc()
 ## Inout functions (pointer equivalent)
 
 ![types](https://cdn-images-1.medium.com/max/1600/1*6aJyC6_MrCRjdIAgXxAxkQ.png)
-[Value vs. Reference types in Swift](https://medium.com/@abhimuralidharan/difference-between-value-type-and-a-reference-type-in-ios-swift-18cb5145ad7a)
+<br/>[Value vs. Reference types in Swift](https://medium.com/@abhimuralidharan/difference-between-value-type-and-a-reference-type-in-ios-swift-18cb5145ad7a)
 
-You normally will not need to pass objects as pointers in Swift, but it can be done, and is occasionally more elegant. Here we are simply rearrainging an object's elements.
+<br/>You normally will not need to pass objects as pointers in Swift, but it can be done, and is occasionally more elegant. In this example we are simply rearrainging an object's elements.
 ```
 Sorter.sortNames(&names)
 
