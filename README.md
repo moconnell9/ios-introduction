@@ -21,7 +21,7 @@ This collection is organized into three tiers of information, based on how much 
 ### Recommended
 - [Use the Storyboard editor and its Outlets](./Storyboards.md)
 - [Install and use frameworks through Cocoapods](./Cocoapods.md)
-- [File manipulation](./JSONHandling.playground)
+- [Decode data from a file](./JSONHandling.playground)
 
 ### [Additional](./Additional.md)
 - Design patterns, e.g. delegates, protocols
