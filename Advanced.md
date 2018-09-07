@@ -1,8 +1,17 @@
-Here I leave you some tidbits and articles I find interesting, that may or may not be useful to you.
+By advanced, I mean that these concepts are not critical to the beginning stages of development, but are still very good to know.
+
+- [Design Patterns](#design-patterns)
+  * [Using delegates](#using-delegates)
+  * [Protocol-Oriented Programming (POP)](#protocol-oriented-programming---pop)
+  * [UI Design Patterns](#ui-design-patterns)
+- [Style Guide](#style-guide)
+  * [Swiftlint](#swiftlint)
+- [Unit-Testing](#unit-testing)
+- [Referencing Objective-C code in Swift](#referencing-objective-c-code-in-swift)
 
 ## Design Patterns
 [Design Patterns - Ray Wenderlich](https://www.raywenderlich.com/477-design-patterns-on-ios-using-swift-part-1-2)
-- great overview from Ray Wenderlich aka Internet Lord of all things Swift
+- great overview from Ray Wenderlich, aka Internet Lord of all things Swift
 
 ### Using delegates
 
@@ -27,7 +36,7 @@ Again, don't be afraid to reference [official documentation.](https://developer.
 
 That's it! Now when a text field is tapped in your view, your code is automatically called and executed. (Here, the background color is changed.)
 
-### Protocol-Oriented Programming (POP)
+### Protocol-Oriented Programming - POP
 
 Protocols are basically interfaces that can have sibling relationships, not just parent-child. They are commonly referred to as "blueprints" because you can mix and match them with other implementations as necessary.
 > [All about protocols](https://www.raywenderlich.com/814-introducing-protocol-oriented-programming-in-swift-3)
