@@ -6,17 +6,17 @@ Everything you need to get started coding an iOS application in Swift.
 This collection is organized into three tiers of information, based on how much time you may have.
 
 ### Essential Skills
-- [Getting comfortable with the Xcode editor](./Xcode.md)
-- [Learning the Swift language](./Swift.md)
+- [Get comfortable with the Xcode editor](./Xcode.md)
+- [Begin learning the Swift language](./Swift.md)
 
 ### Recommended Skills
-- Working knowledge of the Storyboard editor and its delegates
-- Know how to install and use frameworks through Cocoapods
+- [Use the Storyboard editor and its Outlets](./Storyboards.md)
+- [Install and use frameworks through Cocoapods](./Cocoapods.md)
 - [File manipulation](./JSONHandling.playground)
 
-### Advanced Skills
-- Design patterns, e.g. protocols
-- Other delegates, e.g. the keyboard
+### [Advanced Skills](./Advanced.md)
+- Design patterns, e.g. delegates, protocols
+- Style Guide, Swiftlint
 
 ## FAQ
 
