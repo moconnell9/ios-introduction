@@ -5,7 +5,7 @@ Everything you need to get started coding an iOS application in Swift.
   * [Targeted Skills](#targeted-skills)
     + [Essential Skills](#essential-skills)
     + [Recommended Skills](#recommended-skills)
-    + [[Additional Skills](./Additional.md)](#-additional-skills---additionalmd-)
+    + [[Additional Skills](./Additional.md)]
   * [FAQ](#faq)
     + [Nerdy articles](#nerdy-articles)
     + [Really useful links](#really-useful-links)
