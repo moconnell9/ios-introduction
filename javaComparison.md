@@ -1,5 +1,7 @@
 Below are java equivalents to the Swift example code snippets given.
 
+A free online java compiler is a great tool to start playing with java: https://www.tutorialspoint.com/compile_java_online.php
+
 ## Let vs. Var
 
 In Java, types must be specified when declaring a variable. 
