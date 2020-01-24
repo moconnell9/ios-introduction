@@ -49,15 +49,21 @@ Optionals help guide you on the path to gracefully handling edge cases and error
 
 ```
 //let's use a dictionary this time
-var toolbox = ["hammer" : "Stanley 5oz. Pro", "screwdriver" : "Craftsman 9-31794 Slotted Phillips"]
+var toolbox: [String: String]?
+...
+toolbox = ["hammer" : "Stanley 5oz. Pro", "screwdriver" : "Craftsman 9-31794 Slotted Phillips"]
         
 //PREFERRED: 'guard let'
-guard let hammerType = toolbox?["hammer"] else { return }
-print("I have a \(hammerType) hammer in my toolbox")
+func guardHammerFunc() {
+    guard let hammerType = toolbox?["hammer"] else { return }
+    print("I have a \(hammerType) hammer in my toolbox")
+}
 
 //'if let'
-if let hammerType = toolbox?["hammer"] {
-    print("I have a \(hammerType) hammer in my toolbox")
+func letHammerFunc() {
+    if let hammerType = toolbox?["hammer"] {
+        print("I have a \(hammerType) hammer in my toolbox")
+    }
 }
 ```
 
