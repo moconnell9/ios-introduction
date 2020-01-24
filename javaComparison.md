@@ -1,33 +1,37 @@
 Below are java equivalents to the Swift example code snippets given.
 
-Let vs. Var
+## Let vs. Var
 
 In Java, types must be specified when declaring a variable. 
 Instead of "let" we can use "const" in front of the type to make it immutable.
 
-private static double pi = 3.14;
+```private static double pi = 3.14;
 private static String toolbox;
+```
 
+```
 String[] toolbox = {"hammer", "screwdriver", "wrench"};
 for (String tool: toolbox) {
     System.out.println(tool);
 }
+```
 
 
 
-
-Optionals
+## Optional variables
 
 Optionals are a modern solution/replacement for null checking.
 
-private static void myFunc(String[] toolbox) {
+```private static void myFunc(String[] toolbox) {
     if (toolbox != null) {
        //do stuff
     }
 }
 
+```
 Java 8 and above does support optionals:
+```
 Optional<String[]> toolbox = Optional.empty();
-
+```
 
 
