@@ -55,5 +55,5 @@ pod update
 #### Final Note
 If a framework is not included in the set that Cocoapods automatically recognizes, e.g. a private repo, you can add the source above the pods in the Podfile:
 ```
- source 'https://github.com/MyBestFriends/Framework.git'
+ source 'https://github.com/MyBestFriendsFramework.git'
  ```
