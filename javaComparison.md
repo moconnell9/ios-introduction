@@ -3,9 +3,10 @@ Below are java equivalents to the Swift example code snippets given.
 ## Let vs. Var
 
 In Java, types must be specified when declaring a variable. 
-Instead of "let" we can use "const" in front of the type to make it immutable.
+Instead of "let" we can use "static" in front of the type to make it immutable.
 
-```private static double pi = 3.14;
+```
+private static double pi = 3.14;
 private static String toolbox;
 ```
 
@@ -22,7 +23,8 @@ for (String tool: toolbox) {
 
 Optionals are a modern solution/replacement for null checking.
 
-```private static void myFunc(String[] toolbox) {
+```
+private static void myFunc(String[] toolbox) {
     if (toolbox != null) {
        //do stuff
     }
