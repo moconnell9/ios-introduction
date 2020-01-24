@@ -52,12 +52,12 @@ Optionals help guide you on the path to gracefully handling edge cases and error
 var toolbox = ["hammer" : "Stanley 5oz. Pro", "screwdriver" : "Craftsman 9-31794 Slotted Phillips"]
         
 //PREFERRED: 'guard let'
-guard let hammer = toolbox?["hammer"] else { return }
-print("I have a %@ hammer in my toolbox", hammer)
+guard let hammerType = toolbox?["hammer"] else { return }
+print("I have a \(hammerType) hammer in my toolbox")
 
 //'if let'
-if let hammer = toolbox?["hammer"] {
-    print("I have a %@ hammer in my toolbox", hammer)
+if let hammerType = toolbox?["hammer"] {
+    print("I have a \(hammerType) hammer in my toolbox")
 }
 ```
 
