@@ -81,11 +81,11 @@ In this example, we can clearly see the keys are in the dictionary. But when a d
 
 Hey, that is much shorter, and the compiler still shut up! Cool, right?
 
-***WRONG.*** **Force unwrapping is considered bad practice.** Swiftlint will fail your build if you use it anywhere other than UIOutlets or try-catch statements.
+***WRONG.*** **Force unwrapping is unsafe and is generally considered bad practice.** Swiftlint will fail your build if you use it anywhere other than UIOutlets or try-catch statements.
 
-In this example, if the key "hammer" is not in the dictionary, the entire app crashes. This is very bad.
+In this example, if the key "hammer" is not in the dictionary, the entire app crashes. (This is very bad.)
 
-When you force-unwrap, you are making a guarantee to the compiler that you know better than it does, and that you are 100% sure the value will be there. If you are wrong, your app crashes. That's it.
+When you force-unwrap, you are making a guarantee to the compiler that you know better than it does, and that you are 100% sure the value will be there. If you are wrong, your app crashes. That's it- so use sparingly.
 
 ## Try, Try?, Try!
 
