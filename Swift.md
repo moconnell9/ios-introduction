@@ -1,5 +1,7 @@
 # Swift
 
+Get started coding in Swift right away with this free online Swift compiler: http://online.swiftplayground.run/
+
 Please see [JSONHandling.playground](JSONHandling.playground) for a quick-to-work demonstration that includes the below concepts.
 
 [Apple's documentation for Swift](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html) is very good- be sure to check it out! The below are just some highlights.
