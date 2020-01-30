@@ -6,6 +6,7 @@ Everything you need to get started coding an iOS application in Swift.
 1. With your Apple ID, make an Apple developer account. It is free to use Xcode and build apps locally- you are only required
     to pay an annual fee if you wish to publish on the App Store.
     - Go to `developer.apple.com` and go to the `Account` tab.
+    - If you skip this step, you will see a "failure to create provisioning profile" error in Signing in your project.
 2. Go to the App Store and download Xcode. You will need your Apple ID and password.
     - If your OS isn't up to date, Xcode may fail to install without telling you why. It is most likely because 
     the latest Xcode is not supported on your OS. You can get a previous version of Xcode by going to 
