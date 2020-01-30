@@ -1,15 +1,6 @@
 # ios-introduction
 Everything you need to get started coding an iOS application in Swift.
 
-- [ios-introduction](#ios-introduction)
-  * [Targeted Skills](#targeted-skills)
-    + [Essential](#essential)
-    + [Recommended](#recommended)
-    + [Additional](#additional)
-  * [FAQ](#faq)
-    + [Nerdy articles](#nerdy-articles)
-    + [Really useful links](#really-useful-links)
-
 ## Targeted Skills
 
 This collection is organized into three tiers of information, based on how much time you may have.
@@ -30,6 +21,8 @@ This collection is organized into three tiers of information, based on how much 
 - Bridging with Objective-C code
 
 ## FAQ
+
+- Ray Wenderlich is the de facto authority on all things iOS - do yourself a favor and check out the guides and videos on https://www.raywenderlich.com.
 
 ### Nerdy articles
 - Should I go [native or hybrid?](https://hackernoon.com/react-native-vs-real-native-apps-which-is-better-a8383d6f7ca5)
